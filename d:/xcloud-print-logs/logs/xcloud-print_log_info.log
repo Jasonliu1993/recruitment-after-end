@@ -1,0 +1,13 @@
+2017-09-17 23:44:55.037 INFO  --- [main] com.jason.recruitment.RecruitmentAfterEndApplication Line:48  - Starting RecruitmentAfterEndApplication on Jason.local with PID 89082 (/Users/Jason/Documents/Workspaces/IDEA/recruitment-after-end/target/classes started by Jason in /Users/Jason/Documents/Workspaces/IDEA/recruitment-after-end)
+2017-09-17 23:44:55.039 INFO  --- [main] com.jason.recruitment.RecruitmentAfterEndApplication Line:593 - No active profile set, falling back to default profiles: default
+2017-09-17 23:44:55.360 INFO  --- [background-preinit] org.hibernate.validator.internal.util.Version Line:30  - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-17 23:44:56.326 INFO  --- [main] org.apache.catalina.core.StandardService Line:179 - Starting service [Tomcat]
+2017-09-17 23:44:56.327 INFO  --- [main] org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-17 23:44:56.382 INFO  --- [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:179 - Initializing Spring embedded WebApplicationContext
+2017-09-17 23:44:57.393 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-17 23:44:57.400 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:179 - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-17 23:44:57.421 INFO  --- [main] org.apache.tomcat.util.net.NioSelectorPool Line:179 - Using a shared selector for servlet write/read
+2017-09-17 23:44:57.438 INFO  --- [main] com.jason.recruitment.RecruitmentAfterEndApplication Line:57  - Started RecruitmentAfterEndApplication in 2.699 seconds (JVM running for 3.108)
+2017-09-17 23:45:06.048 INFO  --- [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-17 23:45:06.125 INFO  --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource Line:667 - {dataSource-1} inited
+2017-09-17 23:48:32.182 INFO  --- [Thread-3] com.alibaba.druid.pool.DruidDataSource Line:1383 - {dataSource-1} closed
