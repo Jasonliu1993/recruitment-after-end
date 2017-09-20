@@ -1,8 +1,10 @@
 package com.jason.recruitment.aop;
 
+import com.jason.recruitment.Utilities.ExceptionUtility;
 import com.jason.recruitment.domain.Message;
 import com.jason.recruitment.exception.ErrorException;
 import com.jason.recruitment.exception.StatusCode;
+import com.jason.recruitment.exceptionHandler.HandlerException;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -31,12 +33,13 @@ public class CheckAuth {
 
         HttpServletRequest request = ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
 
-        String token = (String)request.getParameter("token");
+        String token = request.getParameter("token");
 
         if ("true".equals(token)) {
             return joinPoint.proceed();
         }
-        return new ErrorException(StatusCode.AUTHENTICATION);
+//        return ExceptionUtility.handlerExceptionToErrorMessage(new ErrorException(StatusCode.AUTHENTICATION));
+        throw new ErrorException(StatusCode.AUTHENTICATION);
     }
 
 }
