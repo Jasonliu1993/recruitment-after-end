@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="indexApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Page Description" />
+    <meta name="author" content="Jason" />
+    <title>Page Title</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .div-center {
+            height: 300px;
+            width: 35%;
+            background-color: #fff;
+            opacity: 0.7;
+            margin: 200px auto;
+            border-radius: 5px;
+        }
+
+        .title {
+            width: 100%;
+            height: 70px;
+        }
+
+        .title .title-content {
+            width: 100%;
+            height: 70px;
+            display: block;
+            line-height: 70px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .text-adjust {
+            margin-top: 10px;
+        }
+
+        .error {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="background: url('images/loginBP.jpg') center center; width: 100%;height: 781px; ">
+    <div class="div-center" ng-controller="indexCtrl">
+        <form class="form-horizontal" role="form">
+            <div class="title">
+                <span class="title-content">登录</span>
+            </div>
+            <div class="col-sm-12 text-adjust">
+                <label for="userNameId" class="col-sm-3 control-label text-center">用户名:</label>
+                <div class="col-sm-9"  >
+                    <input type="text" class="form-control" ng-model="userName" id="userNameId" placeholder="用户名" />
+                </div>
+            </div>
+            <div class="col-sm-12 text-adjust">
+                <label for="userPWId" class="col-sm-3 control-label text-center" style="line-height: 100%;">密码:</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" ng-model="userPassword" id="userPWId" placeholder="密码" />
+                </div>
+            </div>
+            <div class="col-sm-12 text-adjust">
+                <div class="col-sm-9 col-sm-offset-2" >
+                    <button type="button" class="btn btn-default" style="width: 100%; background-color: #2aabd2" id="submit" ng-click="submit()">登录
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-12 text-adjust">
+                <div class="col-sm-9 col-sm-offset-2">
+                    <button type="button" class="btn btn-default" style="width: 100%; background-color: #2aabd2" id="register">注册
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="error" ng-bind="errorMessage"></div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script src="js/jquery-3.1.1.min.js"></script>
+</body>
+</html>
